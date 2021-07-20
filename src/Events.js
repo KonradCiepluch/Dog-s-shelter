@@ -47,7 +47,7 @@ const Events = () => {
 
     useEffect(() => {
         setTimeout(() => {
-         fetch('http://localhost:8055/items/events')
+        fetch('http://localhost:8055/items/events')
         .then(response => {
             if(response.ok) {
                 return response.json();
@@ -63,19 +63,6 @@ const Events = () => {
         return () => setEvents([]);
     }, []);
 
-    useEffect(() => {
-        const articles = document.querySelectorAll('.event');
-        if(events.length) {
-            articles.forEach(article => article.classList.add('active'))    
-        }
-        
-        return () => {
-            if(events.length) {
-                articles.forEach(article => article.classList.remove('active'));
-            }
-        }
-    }, [events]);
-
     return ( 
        <div className="events__wrapper">
             <Link className='events__back' to='/'><i className="fas fa-angle-left"></i></Link>
@@ -87,9 +74,7 @@ const Events = () => {
                 <button className='events__left' onClick={() => changePhoto()}><i className="fas fa-arrow-circle-left"></i></button>
                 <button className='events__right' onClick={() => changePhoto('next')}><i className="fas fa-arrow-circle-right"></i></button>
             </Modal> : null}
-       </div> 
-       
-        
+       </div>   
      );
 }
  

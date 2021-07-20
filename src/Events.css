@@ -80,15 +80,10 @@
 
 .event {
     padding: 15px 10px;
-    transform: translateY(20px);
-    opacity: 0;
-}
-
-.event.active {
     animation: visible 1s both;
 }
 
-.event.active:nth-of-type(2) {
+.event:nth-of-type(2) {
     animation-delay: .5s;
 }
 
