@@ -1,0 +1,157 @@
+.pets__back {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 50px;
+    font-size: 25px;
+    line-height: 25px;
+    color: rgba(92, 53, 81, 0.5);
+    transition: color .2s, border-color .2s;
+    border: 2px solid rgba(92, 53, 81, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.pets__back:hover {
+    color: #5c3551;
+    border-color: #5c3551;
+}
+
+.pets__back:hover .fa-angle-left {
+    text-shadow: -10px 0 0 #5c3551, 10px 0 0 #5c3551;
+}
+
+.pets__back:hover {
+    color: #5c3551;
+}
+
+.pets__heading {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.pets__loader {
+    position: relative;
+    width: 50px;
+    height: 4px;
+    margin: 30px auto;
+    border-radius: 5px;
+    background-color: rgba(92, 53, 81, 0.5);
+}
+
+.pets__loader::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #5c3551;
+    top: 0;
+    left: 0;
+    transform-origin: left center;
+    animation: loading 1.6s linear infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: scaleX(1);
+    }
+
+    to {
+        transform: scaleX(0);
+    }
+}
+
+.pets__section {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: 150px;
+    grid-auto-rows: 150px;
+    grid-row-gap: 10px;
+    justify-content: space-evenly;
+    padding: 25px 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+@media(max-width: 600px) {
+    .pets__section {
+        grid-template-columns: repeat(3, 100px);
+    }
+}
+
+@media(max-width: 400px) {
+    .pets__section {
+        grid-template-columns: repeat(2, 100px);
+    }
+}
+
+.pet__item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transform: translateX(-20px);
+    opacity: 0;
+}
+
+.pet__item.active {
+    animation: left .5s both;
+}
+
+@keyframes left {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.image__wrapper {
+    border-radius: 90px;
+    flex-basis: 100px;
+    overflow: hidden;
+}
+
+.pet__img {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.pet__img.active {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 0 0 5px 0 #5c3551;
+}
+
+.fas {
+    margin-left: 20px;
+}
+
+.fa-arrow-alt-circle-left {
+    margin-left: 0;
+}
+
+.vaccinated {
+    color: rgba(255, 0, 0, 0.6);
+}
+
+.pet__btn {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+.pet__date {
+    font-size: 12px;
+}
