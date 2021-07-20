@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Dog-s-shelter/static/css/main.52dc97c3.chunk.css",
+    "main.js": "/Dog-s-shelter/static/js/main.698f6d77.chunk.js",
+    "main.js.map": "/Dog-s-shelter/static/js/main.698f6d77.chunk.js.map",
+    "runtime-main.js": "/Dog-s-shelter/static/js/runtime-main.72d67c71.js",
+    "runtime-main.js.map": "/Dog-s-shelter/static/js/runtime-main.72d67c71.js.map",
+    "static/js/2.68a71773.chunk.js": "/Dog-s-shelter/static/js/2.68a71773.chunk.js",
+    "static/js/2.68a71773.chunk.js.map": "/Dog-s-shelter/static/js/2.68a71773.chunk.js.map",
+    "index.html": "/Dog-s-shelter/index.html",
+    "static/css/main.52dc97c3.chunk.css.map": "/Dog-s-shelter/static/css/main.52dc97c3.chunk.css.map",
+    "static/js/2.68a71773.chunk.js.LICENSE.txt": "/Dog-s-shelter/static/js/2.68a71773.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.72d67c71.js",
+    "static/js/2.68a71773.chunk.js",
+    "static/css/main.52dc97c3.chunk.css",
+    "static/js/main.698f6d77.chunk.js"
+  ]
+}
