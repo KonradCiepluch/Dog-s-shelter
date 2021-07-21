@@ -20,19 +20,18 @@
 }
 
 .heading__logo {
-  flex-basis: 100px;
-  width: 100%;
+  width: 100px;
 }
 
 @media(max-width: 600px) {
   .heading__logo {
-    flex-basis: 80px;
+    width: 80px;
   }
 }
 
 @media(max-width: 400px) {
   .heading__logo {
-    flex-basis: 70px;
+    width: 70px;
   }
 }
 

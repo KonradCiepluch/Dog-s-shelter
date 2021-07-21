@@ -8,7 +8,7 @@ import logo from './assets/logo.png';
 const App = () =>  {
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className='page'>
         <Switch>
           <Route path='/' exact>

@@ -50,7 +50,7 @@
     top: 0;
     left: 0;
     transform-origin: left center;
-    animation: loading 1.6s linear infinite;
+    animation: loading 1.5s linear forwards;
 }
 
 @keyframes loading {
@@ -97,7 +97,7 @@
 }
 
 .pet__item.active {
-    animation: left .5s both;
+    animation: left .5s forwards;
 }
 
 @keyframes left {
